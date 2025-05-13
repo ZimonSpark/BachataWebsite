@@ -322,3 +322,327 @@ video {
   border-radius: 30px; /* Adds 30px border radius to the video */
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.7); /* Adds box shadow to the video */
 }
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ */
+
+/* 
+* {
+  outline: 1px solid red;
+}
+ */
+
+body {
+    margin: 0 0 20px 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  .quote-box {
+    border: 1.5px solid #333;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 7px 20px rgba(0, 1, 0, 1);
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out; /* Smooth transition for fade effects */
+  }
+  
+  .quote-box.fade-out {
+    opacity: 0; /* Fully transparent */
+  }
+
+  .quote-box.fade-in {
+    opacity: 1; /* Fully visible */
+  }
+  
+  h1 {
+    color: black; /* Default color for text outside the span */
+  }
+
+  .text-style1 {
+    font-size: 100%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    color: red; /* Explicitly set the color for the span */
+    display: block;
+    text-align: left;
+  }
+
+  .text-style2 {
+    font-size: 70%;
+    margin-bottom: 20px;
+    color: #1b11a7;
+    display: block;
+    text-align: center;
+  }
+
+  .text-style3 {
+    font-size: clamp(14px, 2.5vw, 22px); /* Minimum: 16px, Preferred: 2.5vw, Maximum: 32px */
+    margin-bottom: 0;
+    padding: 0;
+    color: #000000;
+    display: block;
+    text-align: center;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ddd;
+  }
+#top-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Smooth transition for fade effects */
+}
+
+.fade-in-image {
+  opacity: 1; /* Fully visible */
+}
+
+.cursor-image-dimentions {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Container for articles */
+.article-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  gap: 10px; /* Removed gap to prevent extra space */
+  justify-content: center; /* Centers the articles horizontally */
+  align-items: stretch; /* Ensures all articles have the same height */
+  max-width: 100%; /* Ensures the container spans the full width */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Individual article blocks */
+article {
+  flex: 0 0 calc(33.33% - 10px); /* Adjusted to account for padding */
+  max-width: calc(33.33% - 10px); /* Ensures the maximum width is 1/3 of the container minus padding */
+  box-sizing: border-box; /* Includes padding and border in the width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin: 0; /* Removed any default margin */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  article {
+    flex: 1 1 100%; /* Stacks articles vertically on smaller screens */
+    max-width: 100%; /* Ensures full width on small screens */
+  }
+}
+
+.video-container {
+  position: relative; /* Makes the container a positioning context */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 20px auto; /* Centers the video container horizontally */
+}
+
+video {
+  display: block; /* Ensures the video is treated as a block element */
+  margin: 0 auto; /* Centers the video horizontally */
+  width: 100%; /* Ensures the video scales properly */
+  max-width: 400px; /* Limits the maximum width of the video */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 30px; /* Adds 30px border radius to the video */
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.7); /* Adds box shadow to the video */
+}
+
+.video-text {
+  position: absolute; /* Positions the text relative to the container */
+  top: 93%; /* Centers the text vertically */
+  left: 50%; /* Centers the text horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for the text's own dimensions */
+  color: white; /* Makes the text visible on the video */
+  font-size: clamp(10px, 7vw, 180%); /* Minimum, Preferred, Maximum */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.popup2Button {
+  position: relative; /* Positions the button relative to the container */
+  top: 50%; /* Centers the button vertically */
+  left: 50%; /* Centers the button horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for the button's own dimensions */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Ensure the popup container scales based on its content */
+.popup-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 20px; /* Add spacing between buttons */
+  margin: 20px 0 20px 0; /* Add some space from the top */
+}
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup button {
+  margin-top: 10px;
+}
+
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Adds a blur effect */
+  z-index: 999; /* Places it below the popup but above the content */
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  gap: 10px; /* Adds spacing between button containers */
+  justify-content: center; /* Centers the button containers horizontally */
+  align-items: center; /* Centers the button containers vertically */
+  max-width: 100%; /* Restricts the container to half the page width */
+  margin: 0 auto; /* Centers the container horizontally */
+  
+}
+
+.button-container {
+  flex: 0 0 calc(50% - 10px); /* Adjusted to account for padding */
+  max-width: calc(50% - 10px); /* Ensures the maximum width is 1/3 of the container minus padding */
+  min-width: 200px;
+  box-sizing: border-box; /* Includes padding and border in the width */
+  padding: 10px;
+  margin: 0; /* Removed any default margin */
+  text-align: center; /* Centers the button inside the container */
+}
+
+/* Carousel code */
+
+.video-carousel {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  height: 700px;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-track video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for position and opacity */
+  opacity: 0; /* Start with videos hidden */
+}
+
+.carousel-track video.visible {
+  opacity: 1; /* Fully visible when the video is active */
+}
+
+.carousel-track video.fading-out {
+  opacity: 0; /* Fade out effect for the video being hidden */
+}
+
+.carousel-button {
+  position: absolute;
+  top:50%;
+ /*  transform: translateY(-50%); */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes bounce-reverse {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.carousel-track.bounce {
+  animation: bounce 0.5s ease-in-out;
+}
+
+.carousel-track.bounce-reverse {
+  animation: bounce-reverse 0.5s ease-in-out;
+}
+
+.responsive-iframe {
+  height: 90vw; /* 80% of the viewport width */
+  aspect-ratio: 9 / 16; /* Maintain a 16:9 aspect ratio */
+  max-width: 100%; /* Prevents it from exceeding the parent container */
+  max-height: 100%; /* Prevents it from exceeding the parent container */
+  border-radius: 30px; /* Adds 30px border radius to the video */
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.7); /* Adds box shadow to the video */
+}
