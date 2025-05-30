@@ -37,21 +37,6 @@ window.onload = () => {
         console.error("Element with id 'top-image' not found.");
     }
 
-    const audio = document.getElementById('song1');
-    if (audio && topImage) {
-        topImage.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-                console.log("Audio started playing.");
-            } else {
-                audio.pause();
-                console.log("Audio paused.");
-            }
-        });
-    } else {
-        console.error("Audio element or top image not found.");
-    }
-
     const video = document.getElementById('bachata-video1');
     if (video) {
         video.addEventListener('click', () => {
@@ -98,24 +83,6 @@ window.onload = () => {
     console.log("Page loaded.");
     initializeCarousel();
 };
-
-function popup1() {
-    alert("Welcome to the bachata world!");  
-}
-
-function openPopup2() {
-    const popup2 = document.getElementById("popup2");
-    const overlay = document.getElementById("overlay");
-    popup2.style.display = "block";
-    overlay.style.display = "block"; // Show the overlay
-}
-
-function closePopup2() {
-    const popup2 = document.getElementById("popup2");
-    const overlay = document.getElementById("overlay");
-    popup2.style.display = "none";
-    overlay.style.display = "none"; // Hide the overlay
-}
 
 function navigateToPage(page) {
     window.location.href = page; // Redirects to the specified page
