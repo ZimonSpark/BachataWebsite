@@ -4,32 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Simon Sensual Bachata</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   </head>
   <script src="script.js" defer></script>
   <body>
-    <h1>
-      <span class="text-style1">Welcome to Simon's Bachata Website </span>
-      <span class="text-style2">Bachata Sensual</span>
+    <h1 class="dancing-title">
+      <span class="text-style1">Simon Sensual Bachata</span>
     </h1>
-    <img src="Bachata Sensual.png" alt="Bachata Sensual" id="top-image" class="fade-in-image"/> 
+    <img src="Header picture.jpg" alt="Bachata Sensual" id="top-image" class="fade-in-image"/> 
     <audio id="song1" src="Santa de mi devocion.mp3" loop></audio>
-    <div class="text-style3">
+    <div class="text-style3-pillars-title">
       <h2>The three pillars of Bachata Sensual</h2>
     </div>
     <div class="article-container">
       <article>
-        <h3 class='text-style3'>Conversation</h3>
+        <h3 class='text-style3'>Social activity</h3>
         <p class='text-style3'>
-          Bachata is a conversation through body movements. To avoid boring monologues, leader and follower listen to each other. Only this way the conversation can be pleasant, and sometime, even be mindblowing 😉
+          Bachata is not meant to remain in the classes. You learn to prepare yourself for the real world, bachata parties are everywhere around the globe. With bachata sensual you'll be able to explore.
         </p>
       </article>
       <article>
-        <h3 class='text-style3'>Social activity</h3>
+        <h3 class='text-style3'>Conversation</h3>
         <p class='text-style3'>
-          Bachata is not meant to remain in the classes. You learn to prepare yourself for the real world, bachata parties are everywhere around the globe. With bachata sensual you'll be able to explore. 
+          Bachata is a conversation through body movements. To avoid boring monologues, leader and follower listen to each other. Only this way the conversation can be pleasant, and sometime, even mindblowing 😉 
         </p>
       </article>
       <article>
@@ -40,29 +42,13 @@
       </article>  
     </div>
     <div class="video-container">
-      <video src="Bachata1.mp4" alt="Bachata video" id="bachata-video1" autoplay muted loop></video>
+      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ON1urWrmFgA?si=Xp8OXI1PM4bL2ZYU&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ON1urWrmFgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <div class="video-text">Dancing connection</div>
     </div>
-    <button onclick="showRandomQuote()">Get a piece of wisdom</button>
-    <div class="quote-box" id="quote-box">The quote will appear here</div>
-    <p>Quotes shown: <span id="quote-counter">0</span></p>
-    <div class="popup-container">
-      <button class="button" onclick="openPopup1()">Popup 1</button>
-      <button class="button" onclick="openPopup2()">Do you know the benefits of bachata?</button>
-    </div>
-
-    <div id="overlay" class="overlay"></div>
-    <div id="popup2" class="popup">
-      <p>Happy hormons are released!</p>
-      <button onclick="closePopup2()">Great!</button>
-    </div>
-    <div class="navigation">
-      <div class="button-container">
-        <button class="button" onclick="navigateToPage('page1.html')">Go to Page 1</button>
-      </div>
-      <div class="button-container">
-        <button class="button" onclick="navigateToPage('page2.html')">Go to Page 2</button>
-      </div>
+    <div class="booking-section">
+      <h2 class="dancing-title" style="font-size:2rem; color:#7a2465; margin-top:40px;">Book a Private Class</h2>
+      <p style="text-align:center;">Reserve your spot directly in my Google Calendar:</p>
+      <a href="https://calendar.app.google/GnrEcbUwbVMY9G4w8" target="_blank" class="booking-button">Book Now</a>
     </div>
   </body>
 </html>
