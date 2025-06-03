@@ -12,14 +12,18 @@
 }
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-    margin: 0 0 20px 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove all default margin, including bottom */
+    padding: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 20px;
     width: 100%;
+    padding-bottom: 60px; /* Prevent content from being hidden behind the footer */
+    box-sizing: border-box;
   }
   
   .quote-box {
@@ -82,7 +86,7 @@ body {
 }
 
 .text-style3 {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', cursive;
     font-size: clamp(14px, 2.5vw, 22px);
     margin-top: 0;
     margin-bottom: 0;
@@ -367,7 +371,7 @@ video {
   display: inline-block;
   background: #7a2465;
   color: #fff;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', cursive;
   font-size: 1.4rem;
   padding: 12px 32px;
   border-radius: 30px;
@@ -388,5 +392,35 @@ video {
 
 .booking-section {
   text-align: center;
+}
+
+.site-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #7a2465;
+  color: #fff;
+  padding: 15px 0 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+.site-header .header-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  transition: color 0.2s;
+}
+.site-header .header-link:hover {
+  color: #ffd700;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 60px; /* Height of the header */
+  box-sizing: border-box;
 }
 
