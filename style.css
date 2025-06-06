@@ -367,6 +367,11 @@ video {
   margin: 0 auto;
 }
 
+.responsive-iframe.no-border {
+  border: none !important;
+  outline: none !important;
+}
+
 .booking-button {
   display: inline-block;
   background: #7a2465;

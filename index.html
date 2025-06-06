@@ -46,8 +46,8 @@
         </p>
       </article>  
     </div>
-    <div class="video-container">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/qIabnCwV2EU?autoplay=1&mute=1&loop=1&playlist=qIabnCwV2EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="video-container"> 
+      <iframe class="responsive-iframe no-border" src="https://www.youtube.com/embed/fjSIpCqq_-4?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=qIabnCwV2EU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <div class="video-text">Dancing connection</div>
     </div>
     <div class="booking-section">
@@ -55,5 +55,18 @@
       <p class='text-style3'>Reserve your spot directly in my Google Calendar:</p>
       <a href="https://calendar.app.google/fRoBxtecZkQaqkhi6" target="_blank" class="booking-button">Book Now</a>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var iframe = document.querySelector('.responsive-iframe');
+        var isUnmuted = false;
+        iframe.addEventListener('click', function() {
+          if (!isUnmuted) {
+            // Post a message to the YouTube iframe to unmute
+            iframe.contentWindow.postMessage('{"event":"command","func":"unMute","args":""}', '*');
+            isUnmuted = true;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
