@@ -450,17 +450,14 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .intro-article {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+.responsive-desc {
+  font-size: 1.3rem;
 }
 
-/* Shrink only descriptive text on phone-sized screens */
 @media (max-width: 600px) {
   .intro-article,
-  .text-style3 {
+  .text-style3,
+  .responsive-desc {
     font-size: 0.9rem;
   }
 }
