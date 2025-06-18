@@ -457,6 +457,14 @@ body {
   }
 }
 
+/* Shrink only descriptive text on phone-sized screens */
+@media (max-width: 600px) {
+  .intro-article,
+  .text-style3 {
+    font-size: 0.9rem;
+  }
+}
+
 .icon-img {
   width: 46px;
   height: 46px;
@@ -548,4 +556,5 @@ body {
     width: 100%;
   }
 }
+
 
