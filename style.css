@@ -454,6 +454,23 @@ body {
   font-size: 1.3rem;
 }
 
+.responsive-desc a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  display: inline-block;
+  max-width: 100%;
+}
+@media (max-width: 600px) {
+  .responsive-desc a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 98vw;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
 @media (max-width: 600px) {
   .intro-article,
   .text-style3,
