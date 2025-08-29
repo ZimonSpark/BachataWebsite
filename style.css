@@ -542,8 +542,8 @@ body {
   flex-wrap: wrap;
 }
 .class-image {
-  max-width: 48vw;
-  min-width: 220px;
+  max-width: 70vw;
+  min-width: 350px;
   height: auto;
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
