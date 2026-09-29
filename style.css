@@ -715,3 +715,65 @@ body {
   padding: 0 20px;
   box-sizing: border-box;
 }
+
+/* Home title with the SBS logo on its left; logo is twice the title's line height */
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.home-title .text-style1 {
+  line-height: 1.2;
+  margin-bottom: 0;
+  width: auto;
+}
+.title-logo {
+  height: 6rem; /* 2 x (2.5rem x 1.2 line height) */
+  width: auto;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .title-logo {
+    height: 5rem; /* 2 x (2.1rem x 1.2 line height) */
+  }
+}
+
+.site-footer {
+  margin-top: 40px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.85rem;
+}
+.site-footer a {
+  color: #888;
+}
+
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.media-item {
+  margin: 0;
+  width: 260px;
+  max-width: 100%;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.media-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.media-item figcaption a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d80900;
+  font-weight: 700;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://simonbachata.com/</loc>
+    <image:image><image:loc>https://simonbachata.com/images/sbs-logo.png</image:loc></image:image>
+  </url>
+  <url><loc>https://simonbachata.com/private-classes.html</loc></url>
+  <url><loc>https://simonbachata.com/parties.html</loc></url>
+  <url><loc>https://simonbachata.com/classes.html</loc></url>
+  <url>
+    <loc>https://simonbachata.com/media.html</loc>
+    <image:image><image:loc>https://simonbachata.com/images/sbs-logo.png</image:loc></image:image>
+    <image:image><image:loc>https://simonbachata.com/images/sbs-logo-white.jpg</image:loc></image:image>
+  </url>
+</urlset>
