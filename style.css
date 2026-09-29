@@ -668,27 +668,11 @@ body {
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.7);
 }
 
-.video-placeholder {
-  width: 100%;
+.demo-video {
   max-width: 320px;
   aspect-ratio: 9 / 16;
-  border-radius: 30px;
-  border: 2px dashed #d80900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.6rem;
-  color: #d80900;
-  background: #fff;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.placeholder-note {
-  font-style: italic;
-  color: #888;
+  object-fit: cover;
+  background: #000;
 }
 
 @media (max-width: 768px) {

@@ -29,3 +29,17 @@ window.addEventListener('load', () => {
         follower.style.opacity = '0';
     });
 });
+
+// Demo videos start (muted) only when scrolled into view, so the page stays light on mobile data
+document.querySelectorAll('.demo-video').forEach((video) => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: 0.5 });
+    observer.observe(video);
+});
