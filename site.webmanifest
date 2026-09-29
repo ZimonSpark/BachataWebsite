@@ -1,0 +1,12 @@
+{
+  "name": "SBS ry – Simon Bachata Sensual",
+  "short_name": "SBS",
+  "icons": [
+    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#d80900",
+  "background_color": "#f0f0f0",
+  "display": "browser",
+  "start_url": "/"
+}
