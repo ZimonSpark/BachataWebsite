@@ -690,3 +690,22 @@ body {
     font-size: 2.1rem;
   }
 }
+
+/* Shorter tab names on small screens so the header stays on one line */
+.label-short {
+  display: none;
+}
+@media (max-width: 600px) {
+  .label-long {
+    display: none;
+  }
+  .label-short {
+    display: inline;
+  }
+}
+@media (max-width: 340px) {
+  .site-header .header-link {
+    margin: 0 4px;
+    font-size: 0.88rem;
+  }
+}
