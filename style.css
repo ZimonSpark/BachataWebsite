@@ -572,3 +572,137 @@ body {
 }
 
 
+
+/* ---------- 2026 update: shared page styles ---------- */
+
+html, body {
+  overflow-x: clip; /* keep the cursor face from creating a sideways scrollbar */
+}
+
+body {
+  padding-top: 0;
+}
+
+/* Sticky instead of fixed, so a header that wraps to two lines on phones never covers the title */
+.site-header {
+  position: sticky;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.page-desc {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #333;
+  max-width: 700px;
+  margin: 30px auto 0 auto;
+  line-height: 1.7;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.page-desc a,
+.split-text a,
+.booking-section a {
+  color: #d80900;
+  font-weight: 700;
+}
+
+/* Text on one side, picture/video on the other */
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 5vw;
+  box-sizing: border-box;
+}
+
+.split-text {
+  flex: 1 1 55%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+}
+
+.split-media {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.split-reverse {
+  flex-direction: row-reverse;
+}
+
+.section-title {
+  font-family: 'Dancing Script', cursive;
+  color: #d80900;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+}
+
+.home-photo {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+
+.party-photo {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.7);
+}
+
+.video-placeholder {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+  border-radius: 30px;
+  border: 2px dashed #d80900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #d80900;
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.placeholder-note {
+  font-style: italic;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .split-section,
+  .split-reverse {
+    flex-direction: column; /* text first, media underneath */
+    gap: 20px;
+  }
+  .split-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .page-title,
+  .text-style1 {
+    font-size: 2.1rem;
+  }
+}

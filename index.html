@@ -3,33 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simon Sensual Bachata</title>
+    <title>SBS no profit foundation</title>
+    <meta name="description" content="SBS ry (Simon Bachata Sensual) – a no profit foundation for Bachata Sensual in Helsinki: parties, regular classes and private classes." />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
   </head>
-  <script src="script.js" defer></script>
   <body>
     <header class="site-header">
       <a href="index.html" class="header-link">Home</a>
-      <a href="page1.html" class="header-link">About</a>
-      <a href="page2.html" class="header-link">Contacts</a>
-      <a href="page3.html" class="header-link">Classes</a>
+      <a href="private-classes.html" class="header-link">Private classes</a>
+      <a href="parties.html" class="header-link">Parties</a>
+      <a href="classes.html" class="header-link">Regular classes</a>
     </header>
     <h1 class="dancing-title">
-      <span class="text-style1">Simon Sensual Bachata</span>
+      <span class="text-style1">SBS no profit foundation</span>
     </h1>
-    <div class="class-images-container">
-      <a href="page7.html">
-        <img src="Bachata Thursday Sep-Dec.png" alt="Bachata Thursday Sep-Dec" class="class-image fade-in-image"/>
-      </a>
-    </div>
-    <article class="intro-article">
-      If you are looking for a hobby or activity in Helsinki that will allow you to connect with others, have fun, avoid alcohol, move your body, and develop as a person. Bachata Sensual is perfect for you. I will be happy to introduce you to this fantastic world.
-    </article>
+
+    <section class="split-section">
+      <div class="split-text">
+        <!-- DRAFT: SBS ry description – to be confirmed by Simon -->
+        <p>
+          SBS ry (Simon Bachata Sensual) is a no profit foundation born to grow the Bachata Sensual community in Helsinki.
+        </p>
+        <p>
+          What started in the summer of 2025 as free outdoor classes in the park has become a community of dancers who meet every week to learn, connect and have fun together.
+        </p>
+        <p>
+          Every Friday SBS organises social Bachata parties, a place where everyone is welcome, from the very first steps to experienced dancers.
+        </p>
+      </div>
+      <div class="split-media">
+        <img src="images/simon-home.webp" alt="Simon, Bachata Sensual teacher" class="home-photo" width="587" height="948" />
+      </div>
+    </section>
+
+    <section class="split-section split-reverse">
+      <div class="split-text">
+        <h2 class="section-title">What is Bachata?</h2>
+        <!-- PLACEHOLDER: history of bachata summary, to be provided by Simon -->
+        <p class="placeholder-note">A short history of Bachata is coming soon.</p>
+      </div>
+      <div class="split-media">
+        <!-- PLACEHOLDER: "Demo 1 video", to be provided by Simon -->
+        <div class="video-placeholder">Demo video coming soon</div>
+      </div>
+    </section>
+
     <div class="text-style3-pillars-title">
       <h2>The three pillars of Bachata</h2>
     </div>
@@ -43,37 +66,20 @@
       <article>
         <h3 class='text-style3'>Conversation</h3>
         <p class='text-style3'>
-          Bachata is a conversation through body movements. To avoid boring monologues, leader and follower listen to each other. Only this way the conversation can be pleasant, and sometime, even mindblowing. 
+          Bachata is a conversation through body movements. To avoid boring monologues, leader and follower listen to each other. Only this way the conversation can be pleasant, and sometimes, even mindblowing.
         </p>
       </article>
       <article>
         <h3 class='text-style3'>Fun Fun Fun</h3>
         <p class='text-style3'>
-          Bachata is supposed to be fun all the way from the beginning. You don't win a medal to accomplish a move or coreo. Focus on connecting with whom you are dancing rather than looking good. 
+          Bachata is supposed to be fun all the way from the beginning. You don't win a medal to accomplish a move or coreo. Focus on connecting with whom you are dancing rather than looking good.
         </p>
-      </article>  
+      </article>
     </div>
-    <div class="video-container"> 
-      <iframe class="responsive-iframe no-border" src="https://www.youtube.com/embed/fjSIpCqq_-4?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=fjSIpCqq_-4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <div class="video-text">Dancing connection</div>
-    </div>
+
     <div class="booking-section">
       <h2 class="dancing-title" style="font-size:2rem; color:#d80900; margin-top:40px;">Book a Private Class</h2>
-      <p class='text-style3'>Reserve your spot directly in my Google Calendar:</p>
-      <a href="https://calendar.app.google/fRoBxtecZkQaqkhi6" target="_blank" class="booking-button">Book Now</a>
+      <p class='text-style3'>Contact Simon on WhatsApp at <a href="https://wa.me/393669951834" target="_blank" rel="noopener">+39 366 995 1834</a> to inquire for a private class</p>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var iframe = document.querySelector('.responsive-iframe');
-        var isUnmuted = false;
-        iframe.addEventListener('click', function() {
-          if (!isUnmuted) {
-            // Post a message to the YouTube iframe to unmute
-            iframe.contentWindow.postMessage('{"event":"command","func":"unMute","args":""}', '*');
-            isUnmuted = true;
-          }
-        });
-      });
-    </script>
   </body>
 </html>
